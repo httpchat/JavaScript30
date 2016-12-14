@@ -53,6 +53,10 @@
 <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+   // add event listener to all keys
+   document.querySelectorAll('.key')
+      .forEach(key => key.addEventListener('transitioned', removeTransition))
+   ;
 
 </script>
 
